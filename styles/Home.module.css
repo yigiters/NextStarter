@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=PT+Serif:wght@400;700&display=swap");
+
+.bgSecondary{
+    --tw-bg-opacity: 1;
+    background-color: rgba(244, 242, 237, var(--tw-bg-opacity));
+  }
+
+  .sectionSize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .secondaryTitle {
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    font-family: PT Serif, serif;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .bgUnderline1{
+    background-image: url('/Underline1.svg');
+  }
+
+  .bgUnderline2{
+    background-image: url('/Underline2.svg');
+  }
+
+  .bgUnderline3{
+    background-image: url('/Underline3.svg');
+  }
+
+  .bgUnderline4{
+    background-image: url('/Underline4.svg');
+  }
+
+  .bgHighlight3{
+    background-image: url('/Highlight3.svg');
+  }
+
+  .growingUnderline {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+    overflow: hidden;
+  }
+
+  .growingUnderline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: black;
+    transition: opacity 300ms, transform 300ms;
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+  }
+  
+  .growingUnderline:hover::after,
+  .growingUnderline:focus::after {
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* Font */
+
+  .ptSerif{
+    font-family: PT Serif, serif;
+  }
+
+  .montserrat{
+    font-family: Montserrat, sans-serif;
+  }
+
+  /* Custom */
+
+  .faq {
+    margin-top: -5%;
+  }
